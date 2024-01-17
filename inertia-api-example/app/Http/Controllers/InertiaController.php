@@ -18,7 +18,7 @@ class InertiaController extends Controller
         $id = $request->input('id');
         $response = \Http::withHeaders([
             'X-RapidAPI-Host' => 'crunchbase-crunchbase-v1.p.rapidapi.com',
-            'X-RapidAPI-Key' => 'YOUR_RAPIDAPI_KEY',
+            'X-RapidAPI-Key' => '9f8020dc4dmsh2dd7c0dd991beeep18d76fjsn653d117a3320',
         ])->get("https://crunchbase-crunchbase-v1.p.rapidapi.com/entities/organizations/{$id}");
 
         return $response->json();
